@@ -7,7 +7,7 @@ export const FUSO = 'America/Sao_Paulo'
 export function parseNumeroBR(entrada: unknown): number | null {
   if (typeof entrada === 'number') return Number.isFinite(entrada) ? entrada : null
   if (typeof entrada !== 'string') return null
-  let s = entrada.replace(/R\$|\s| /g, '').trim()
+  let s = entrada.replace(/R\$|\s|\u00a0/g, '').trim()
   if (!s) return null
   const negativo = /^-|^\(.*\)$/.test(s)
   s = s.replace(/[()\-+]/g, '')
@@ -30,7 +30,7 @@ const fmtMoeda = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: '
 /** 1234.56 → "R$ 1.234,56" (com espaço comum, não o espaço fino do Intl). */
 export function formatarMoeda(valor: number | null | undefined): string {
   if (valor === null || valor === undefined || !Number.isFinite(valor)) return '—'
-  return fmtMoeda.format(valor).replace(/ /g, ' ')
+  return fmtMoeda.format(valor).replace(/[\u00a0\u202f]/g, ' ')
 }
 
 /** Data ISO (AAAA-MM-DD) válida? */

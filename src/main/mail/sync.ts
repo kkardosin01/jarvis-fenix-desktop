@@ -188,7 +188,7 @@ export async function sincronizarConta(
   await deps.buscar(desde, jaProcessados, async (msg) => {
     estado.processados[msg.messageId] = deps.agora
     const r = extrairBoletos(msg, { contaEmail: conta.email, hoje: deps.hoje })
-    let boletos: BoletoExtraido[] = []
+    let boletos: BoletoExtraido[]
     if (r.tipo === 'descartado') {
       resultado.ignorados++
       return
