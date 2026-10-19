@@ -1,0 +1,15 @@
+node_modules/
+out/
+dist/
+release/
+coverage/
+test-results/
+playwright-report/
+.env
+.env.*
+!.env.example
+*.log
+# Nunca versionar chaves
+*service-account*.json
+*-credentials.json
+.DS_Store
