@@ -1,0 +1,44 @@
+appId: br.com.comercialfenix.jarvis
+productName: Jarvis Fênix
+copyright: Comercial Fênix SC Ltda
+directories:
+  output: release/${version}
+  buildResources: build
+files:
+  - out/**
+  - package.json
+  - '!**/*.map'
+extraResources:
+  - from: resources
+    to: resources
+    filter: ['**/*']
+asar: true
+win:
+  target:
+    - target: nsis
+      arch: [x64]
+  icon: build/icon.ico
+  executableName: JarvisFenix
+  # Sem certificado de assinatura por enquanto (ver README → "Assinatura do instalador")
+  signAndEditExecutable: true
+  verifyUpdateCodeSignature: false
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: false
+  createDesktopShortcut: always
+  createStartMenuShortcut: true
+  shortcutName: Jarvis Fênix
+  uninstallDisplayName: Jarvis Fênix
+  artifactName: Jarvis-Fenix-Setup-${version}.${ext}
+  installerIcon: build/icon.ico
+  uninstallerIcon: build/icon.ico
+  language: '1046'
+  runAfterFinish: true
+  deleteAppDataOnUninstall: false
+publish:
+  provider: github
+  owner: kkardosin01
+  repo: jarvis-fenix-desktop
+  private: true
+  releaseType: release

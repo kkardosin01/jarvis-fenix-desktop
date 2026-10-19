@@ -190,3 +190,13 @@ describe('validação da resposta da IA', () => {
     ).toBeNull()
   })
 })
+
+describe('formato estruturado da IA', () => {
+  it('o esquema zod vira formato de saída do SDK sem erro', async () => {
+    const { zodOutputFormat } = await import('@anthropic-ai/sdk/helpers/zod')
+    const { RespostaIA } = await import('../../src/main/mail/ia')
+    const f = zodOutputFormat(RespostaIA) as unknown as { type: string; schema: { properties: Record<string, unknown> } }
+    expect(f.type).toBe('json_schema')
+    expect(Object.keys(f.schema.properties)).toEqual(['vencimento', 'valor', 'beneficiario', 'linha_digitavel', 'pix', 'e_conta_a_pagar'])
+  })
+})
