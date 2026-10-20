@@ -2,9 +2,9 @@
 // Envia SÓ o texto do e-mail/PDF candidato, nunca a caixa inteira.
 
 import { z } from 'zod'
-import { validarLinhaDigitavel, validarPix } from '../../shared/boleto-codigo'
-import { parseDataBR } from '../../shared/ptbr'
-import type { BoletoExtraido } from './extrair'
+import { validarLinhaDigitavel, validarPix } from 'jarvis-fenix-core/boleto-codigo'
+import { parseDataBR } from 'jarvis-fenix-core/ptbr'
+import type { BoletoExtraido } from 'jarvis-fenix-core/extrair'
 
 export const MODELO_IA_PADRAO = 'claude-haiku-5-5'
 

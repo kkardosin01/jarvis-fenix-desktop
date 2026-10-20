@@ -1,5 +1,5 @@
 import { ExternalLink, Info } from 'lucide-react'
-import { RASCUNHOS_EMPRESA } from '../../../shared/links'
+import { RASCUNHOS_EMPRESA } from 'jarvis-fenix-core/links'
 import { Botao, Erro, Esqueleto, Painel, Vazio } from '../components/ui'
 import { useJarvis } from '../lib/estado'
 

@@ -9,7 +9,7 @@ import type {
   ResultadoSync,
   StatusSegredos,
   Tela
-} from '../shared/types'
+} from 'jarvis-fenix-core/types'
 
 export interface InfoConfig {
   config: Configuracoes

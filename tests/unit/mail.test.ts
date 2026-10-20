@@ -8,7 +8,7 @@ import {
   temPalavraChave,
   valorDoPix,
   type MensagemCandidata
-} from '../../src/main/mail/extrair'
+} from 'jarvis-fenix-core/extrair'
 import { analisarMensagem, consultaGmail, mensagemErroImap } from '../../src/main/mail/imap'
 import { textoDoPdf } from '../../src/main/mail/pdf'
 import { validarRespostaIA } from '../../src/main/mail/ia'

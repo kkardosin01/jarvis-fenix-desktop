@@ -1,8 +1,8 @@
 // Acesso à planilha Jarvis_Fenix. Só roda no processo principal.
 // Leitura sempre por nome de coluna; escrita SOMENTE em Boletos_Manual e Boletos_Outras_Contas.
 
-import { normalizarTexto } from '../shared/ptbr'
-import type { Linha } from '../shared/types'
+import { normalizarTexto } from 'jarvis-fenix-core/ptbr'
+import type { Linha } from 'jarvis-fenix-core/types'
 
 export const ABAS_ESCRITA = ['Boletos_Manual', 'Boletos_Outras_Contas'] as const
 export type AbaEscrita = (typeof ABAS_ESCRITA)[number]

@@ -1,8 +1,8 @@
 import { AlertTriangle, CheckCircle2, FileKey2, FolderOpen, Pause, Play, Plus, RefreshCw, Trash2 } from 'lucide-react'
 import { useState, type ReactNode } from 'react'
 import type { NovaConta } from '../../../shared/esquemas'
-import { tempoDesde } from '../../../shared/ptbr'
-import type { Configuracoes, ContaEmailPublica, ContaPFPJ, TipoContaEmail } from '../../../shared/types'
+import { tempoDesde } from 'jarvis-fenix-core/ptbr'
+import type { Configuracoes, ContaEmailPublica, ContaPFPJ, TipoContaEmail } from 'jarvis-fenix-core/types'
 import { Botao, Campo, Chip, Erro, Interruptor, Modal, Painel, classeEntrada, cx } from '../components/ui'
 import { mensagemErro, useAcao, useAgora, useJarvis } from '../lib/estado'
 

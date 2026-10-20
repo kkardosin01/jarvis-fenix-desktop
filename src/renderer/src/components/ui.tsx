@@ -1,6 +1,6 @@
 import type { ButtonHTMLAttributes, ReactNode } from 'react'
 import { AlertTriangle, Inbox, Loader2, RefreshCw, X } from 'lucide-react'
-import type { Situacao } from '../../../shared/types'
+import type { Situacao } from 'jarvis-fenix-core/types'
 
 export function cx(...c: (string | false | null | undefined)[]): string {
   return c.filter(Boolean).join(' ')

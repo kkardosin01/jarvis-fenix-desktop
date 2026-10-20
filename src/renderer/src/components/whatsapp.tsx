@@ -1,5 +1,5 @@
 import { Copy, MessageCircle } from 'lucide-react'
-import { normalizarTelefone } from '../../../shared/whatsapp'
+import { normalizarTelefone } from 'jarvis-fenix-core/whatsapp'
 import { mensagemErro, useJarvis } from '../lib/estado'
 import { Botao } from './ui'
 

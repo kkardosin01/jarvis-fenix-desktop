@@ -1,6 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
 import type { InfoConfig } from '../../../preload/api'
-import type { ContaEmailPublica, EstadoPainel, Tela } from '../../../shared/types'
+import type { ContaEmailPublica, EstadoPainel, Tela } from 'jarvis-fenix-core/types'
 
 interface Contexto {
   painel: EstadoPainel | null

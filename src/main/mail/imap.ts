@@ -1,9 +1,9 @@
 // Leitura IMAP SOMENTE LEITURA: caixa aberta com EXAMINE (readOnly), download com BODY.PEEK.
 // Nunca envia, apaga, move nem marca e-mails como lidos.
 
-import type { TipoContaEmail } from '../../shared/types'
-import { normalizarTexto } from '../../shared/ptbr'
-import { PALAVRAS_CHAVE, type AnexoTexto, type MensagemCandidata } from './extrair'
+import type { TipoContaEmail } from 'jarvis-fenix-core/types'
+import { normalizarTexto } from 'jarvis-fenix-core/ptbr'
+import { PALAVRAS_CHAVE, type AnexoTexto, type MensagemCandidata } from 'jarvis-fenix-core/extrair'
 import { textoDoPdf } from './pdf'
 
 export interface ConfigImap {

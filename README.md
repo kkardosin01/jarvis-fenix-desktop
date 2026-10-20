@@ -164,17 +164,20 @@ src/
     mail/
       imap.ts        IMAP somente leitura (imapflow + mailparser)
       pdf.ts         texto de PDFs (pdfjs-dist)
-      extrair.ts     regras determinísticas: vencimento, valor, beneficiário, descarte
       ia.ts          extração opcional com Claude (desligada por padrão)
       sync.ts        gravação em Boletos_Outras_Contas, deduplicação e limpeza
   preload/         ponte tipada (contextBridge)
   renderer/        React + Tailwind (sem acesso a Node)
-  shared/          tipos, conversões pt-BR, linha digitável/PIX, esquemas zod
+  shared/          esquemas zod
+vendor/            jarvis-fenix-core (tarball): tipos, conversões pt-BR, linha digitável/PIX,
+                   extração de boletos e deduplicação — o mesmo núcleo do app web
 tests/
   unit/            Vitest
   e2e/             Playwright (Electron)
   fixtures/        e-mails, PDFs e códigos FICTÍCIOS gerados no teste
 ```
+
+O núcleo de boletos vive no repositório `jarvis-fenix-core` e entra aqui como devDependency (`file:vendor/…tgz`): o electron-vite o embute no bundle, então o electron-builder não precisa instalar nada nem de token. Para atualizar, rode `npm run entregar` no `jarvis-fenix-core` (veja o README de lá); não edite o núcleo aqui.
 
 Pasta de dados no Windows: `%APPDATA%\Jarvis Fênix\` (configurações, cache do painel, estado da sincronização, `segredos.bin` criptografado e `logs\`).
 

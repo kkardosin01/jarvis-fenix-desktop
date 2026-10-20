@@ -5,8 +5,8 @@ import { _electron as electron, expect, test, type ElectronApplication, type Pag
 import { mkdtempSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { hojeISO, somarDias } from '../../src/shared/ptbr'
-import type { DadosPainel } from '../../src/shared/types'
+import { hojeISO, somarDias } from 'jarvis-fenix-core/ptbr'
+import type { DadosPainel } from 'jarvis-fenix-core/types'
 
 const hoje = hojeISO()
 

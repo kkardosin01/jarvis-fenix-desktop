@@ -29,9 +29,9 @@ import {
   esquemaWhatsApp,
   urlExternaPermitida
 } from '../shared/esquemas'
-import { agoraSP, formatarDiaMes, formatarMoeda } from '../shared/ptbr'
-import { linksWhatsApp } from '../shared/whatsapp'
-import type { Configuracoes, ResultadoSync, Tela } from '../shared/types'
+import { agoraSP, formatarDiaMes, formatarMoeda } from 'jarvis-fenix-core/ptbr'
+import { linksWhatsApp } from 'jarvis-fenix-core/whatsapp'
+import type { Configuracoes, ResultadoSync, Tela } from 'jarvis-fenix-core/types'
 import {
   alterarSegredos,
   gravarConfig,

@@ -1,7 +1,7 @@
 // Gera códigos FICTÍCIOS (mas com DV correto) para os testes. Nada aqui é dado real.
 
-import { crc16Pix, modulo10, modulo11Arrecadacao, modulo11Bancario } from '../../src/shared/boleto-codigo'
-import { diferencaDias } from '../../src/shared/ptbr'
+import { crc16Pix, modulo10, modulo11Arrecadacao, modulo11Bancario } from 'jarvis-fenix-core/boleto-codigo'
+import { diferencaDias } from 'jarvis-fenix-core/ptbr'
 
 export function fatorDe(vencimento: string): number {
   return 1000 + diferencaDias('2025-02-22', vencimento)

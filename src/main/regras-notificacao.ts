@@ -1,7 +1,7 @@
 // Regras de quando e o que notificar (sem dependência do Electron, para testar).
 
-import { agoraSP, formatarMoeda, hojeISO } from '../shared/ptbr'
-import type { DadosPainel, Tela } from '../shared/types'
+import { agoraSP, formatarMoeda, hojeISO } from 'jarvis-fenix-core/ptbr'
+import type { DadosPainel, Tela } from 'jarvis-fenix-core/types'
 
 export interface Aviso {
   tipo: 'bomDia' | 'bomDiaPendente' | 'lembrete14'

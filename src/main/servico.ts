@@ -2,9 +2,9 @@
 
 import { randomUUID } from 'node:crypto'
 import { net } from 'electron'
-import { hojeISO } from '../shared/ptbr'
+import { hojeISO } from 'jarvis-fenix-core/ptbr'
 import type { NovaConta, LancarBoleto } from '../shared/esquemas'
-import type { ContaEmailPublica, EstadoPainel, ResultadoSync, StatusSegredos } from '../shared/types'
+import type { ContaEmailPublica, EstadoPainel, ResultadoSync, StatusSegredos } from 'jarvis-fenix-core/types'
 import {
   alterarSegredos,
   criptografiaDisponivel,

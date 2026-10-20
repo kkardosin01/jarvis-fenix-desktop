@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { avisosDevidos, dentroDoHorarioSync, horarioSilencioso, textoBomDia, type EstadoAvisos } from '../../src/main/regras-notificacao'
-import type { Conta, DadosPainel } from '../../src/shared/types'
+import type { Conta, DadosPainel } from 'jarvis-fenix-core/types'
 
 function conta(situacao: Conta['situacao'], valor: number | null = 10, beneficiario = 'Luz'): Conta {
   return {

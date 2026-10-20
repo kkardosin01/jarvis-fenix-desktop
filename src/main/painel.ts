@@ -1,8 +1,8 @@
 // Converte as abas lidas da planilha nos dados do painel.
 
-import { coluna, manualPago, manualVazia, ordenarContas, paraConta } from '../shared/boletos'
-import { parseDataHoraBR, parseNumeroBR } from '../shared/ptbr'
-import type { Conta, Contato, DadosPainel, EmailResumo, Prioridade, Prospect, Resumo } from '../shared/types'
+import { coluna, manualPago, manualVazia, ordenarContas, paraConta } from 'jarvis-fenix-core/boletos'
+import { parseDataHoraBR, parseNumeroBR } from 'jarvis-fenix-core/ptbr'
+import type { Conta, Contato, DadosPainel, EmailResumo, Prioridade, Prospect, Resumo } from 'jarvis-fenix-core/types'
 import type { Aba, AbaLida } from './sheets'
 
 export interface PagosLocais {

@@ -10,11 +10,11 @@ import {
   paraConta,
   registrarChaves,
   type ChavesExistentes
-} from '../../shared/boletos'
-import { formatarLinhaDigitavel } from '../../shared/boleto-codigo'
-import type { Conta, ContaPFPJ, ResultadoSync } from '../../shared/types'
+} from 'jarvis-fenix-core/boletos'
+import { formatarLinhaDigitavel } from 'jarvis-fenix-core/boleto-codigo'
+import type { Conta, ContaPFPJ, ResultadoSync } from 'jarvis-fenix-core/types'
 import type { Planilha } from '../sheets'
-import { extrairBoletos, textoCompleto, type BoletoExtraido, type MensagemCandidata } from './extrair'
+import { extrairBoletos, textoCompleto, type BoletoExtraido, type MensagemCandidata } from 'jarvis-fenix-core/extrair'
 import { validarRespostaIA, type RespostaIA } from './ia'
 
 export const ABA_DESTINO = 'Boletos_Outras_Contas'

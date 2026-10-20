@@ -1,7 +1,7 @@
 import { ExternalLink } from 'lucide-react'
 import { useMemo, useState } from 'react'
-import { GMAIL_EMPRESA } from '../../../shared/links'
-import { normalizarTexto } from '../../../shared/ptbr'
+import { GMAIL_EMPRESA } from 'jarvis-fenix-core/links'
+import { normalizarTexto } from 'jarvis-fenix-core/ptbr'
 import { Botao, Chip, Erro, Esqueleto, Painel, Vazio, cx } from '../components/ui'
 import { useJarvis } from '../lib/estado'
 

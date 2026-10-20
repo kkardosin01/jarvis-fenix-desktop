@@ -2,7 +2,7 @@ import { describe, expect, it, vi } from 'vitest'
 import { Planilha, type SheetsApi } from '../../src/main/sheets'
 import { analisarMensagem } from '../../src/main/mail/imap'
 import { estadoVazio, prepararPanorama, sincronizarConta, type ContaSync } from '../../src/main/mail/sync'
-import { formatarLinhaDigitavel } from '../../src/shared/boleto-codigo'
+import { formatarLinhaDigitavel } from 'jarvis-fenix-core/boleto-codigo'
 import { emailCartao, emailCondominio, emailEscola, emailFuturo, emailLuz, emailPropaganda, linhaCondominio } from '../fixtures/emails'
 
 const CAB_OUTRAS = ['vencimento', 'beneficiario', 'valor', 'conta', 'origem', 'situacao', 'como_pagar', 'observacao', 'conta_email', 'id_mensagem']
@@ -150,7 +150,7 @@ describe('sincronização', () => {
       pix: null,
       e_conta_a_pagar: true
     })
-    const buscar = async (_d: Date, _j: Set<string>, cb: (m: import('../../src/main/mail/extrair').MensagemCandidata) => Promise<void>) => {
+    const buscar = async (_d: Date, _j: Set<string>, cb: (m: import('jarvis-fenix-core/extrair').MensagemCandidata) => Promise<void>) => {
       await cb({ messageId: '<ia@x>', deEmail: 'c@clube.com', deNome: 'Clube', assunto: 'Sua fatura', data: new Date(), texto: 'A fatura do mês está no app.', anexos: [] })
       await cb({ messageId: '<ok@x>', deEmail: 'c@x.com', deNome: 'X', assunto: 'Boleto', data: new Date(), texto: 'Vencimento: 20/10/2026 Valor: R$ 10,00', anexos: [] })
     }
