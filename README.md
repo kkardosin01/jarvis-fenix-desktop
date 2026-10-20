@@ -4,6 +4,8 @@ Aplicativo que fica ligado 24 horas no computador do Tulio (Comercial Fênix SC 
 
 O "cérebro" na nuvem continua igual: as duas tarefas agendadas (prospecção às 8h13 e briefing às 8h38) seguem reescrevendo a planilha. Este app **só escreve** nas abas `Boletos_Manual` e `Boletos_Outras_Contas`; as demais abas ele só lê.
 
+> Situação atual e pendências: [docs/ESTADO.md](docs/ESTADO.md) · [CHANGELOG](CHANGELOG.md) · app de celular: <https://jarvis-fenix.vercel.app> (repositório `jarvis-fenix`)
+
 ---
 
 ## Sumário
