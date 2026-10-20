@@ -44,6 +44,7 @@
     "eslint": "10.13.0",
     "eslint-plugin-react-hooks": "7.1.1",
     "globals": "17.13.0",
+    "jarvis-fenix-core": "file:vendor/jarvis-fenix-core-0.1.0.tgz",
     "lucide-react": "1.59.0",
     "react": "19.3.1",
     "react-dom": "19.3.1",
