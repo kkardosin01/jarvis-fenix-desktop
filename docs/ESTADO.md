@@ -1,18 +1,16 @@
-# Jarvis Fênix (computador) — situação em 19/10/2026
+# Jarvis Fênix (computador) — situação em 20/10/2026
 
 ## Feito
 
 - Código completo, com testes, typecheck, lint e build passando (os testes do núcleo agora rodam no `jarvis-fenix-core`).
-- Instalador `Jarvis-Fenix-Setup-0.1.0.exe` gerado **localmente** (`release/0.1.0/`, fora do Git). Ele foi gerado **antes** da troca para o `jarvis-fenix-core` e da nova identidade visual (20/10); gere de novo antes de instalar.
+- Versão **0.1.0 publicada** em 20/10 no GitHub Releases (repositório privado): https://github.com/kkardosin01/jarvis-fenix-desktop/releases/tag/v0.1.0 — instalador, `.blockmap` e `latest.yml`, gerados já com o `jarvis-fenix-core` e a nova identidade visual.
+- **Instalado no PC da empresa** em 20/10 (opção "Apenas para mim", usuário `USER` do Windows) e **conectado à planilha** com uma chave nova da conta `jarvis-web@jarvis-fenix.iam.gserviceaccount.com` (a mesma conta do app de celular, chave separada para poder revogar só a do PC).
 - Núcleo de boletos movido para o pacote compartilhado `jarvis-fenix-core` (ver [CHANGELOG](../CHANGELOG.md)).
 
 ## Ainda não feito
 
-- [ ] **Nenhuma versão publicada no GitHub Releases**, então ainda não há atualização automática. Publicar exige o token descrito no README (seção 4).
-- [ ] **Instalar no computador do Tulio** e conectar a planilha.
-- [ ] **Chave da conta de serviço para este app.** O projeto do Google Cloud já existe: **`jarvis-fenix`**, na conta `fenix.hospitalares@gmail.com`, criado em 19/10 para o app de celular. Há duas opções:
-  - criar **outra chave** para a conta `jarvis-web@jarvis-fenix.iam.gserviceaccount.com`, que já é Editor da planilha (mais simples; dá para revogar cada chave separadamente); ou
-  - criar a conta `jarvis-desktop`, como descreve o README, e compartilhar a planilha com ela.
+- [ ] **Token de atualização no PC** (fine-grained, só leitura de `jarvis-fenix-desktop`) em Configurações → Atualizações e suporte. Sem ele, o PC não baixa as próximas versões sozinho.
+- [ ] Conectar o e-mail pessoal do Tulio (senha de app do Gmail).
 - [ ] Contas de e-mail pessoais: se as mesmas contas forem ligadas aqui **e** no app de celular, as duas leituras gravam na mesma aba. A deduplicação (mesmo `id_mensagem`, mesma linha digitável ou mesmo beneficiário + vencimento + valor) evita linhas repetidas, mas o mais simples é ler cada conta em um app só.
 - [ ] Assinatura de código do instalador (aviso do SmartScreen) — decisão pendente.
 
