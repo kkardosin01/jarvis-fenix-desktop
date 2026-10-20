@@ -5,12 +5,13 @@
 - Código completo, com testes, typecheck, lint e build passando (os testes do núcleo agora rodam no `jarvis-fenix-core`).
 - Versão **0.1.0 publicada** em 20/10 no GitHub Releases (repositório privado): https://github.com/kkardosin01/jarvis-fenix-desktop/releases/tag/v0.1.0 — instalador, `.blockmap` e `latest.yml`, gerados já com o `jarvis-fenix-core` e a nova identidade visual.
 - **Instalado no PC da empresa** em 20/10 (opção "Apenas para mim", usuário `USER` do Windows) e **conectado à planilha** com uma chave nova da conta `jarvis-web@jarvis-fenix.iam.gserviceaccount.com` (a mesma conta do app de celular, chave separada para poder revogar só a do PC).
+- **Token de atualização** (fine-grained `Jarvis PC Tulio`, só `Contents: Read-only` de `jarvis-fenix-desktop`) guardado no PC em 20/10 — as próximas releases chegam sozinhas. Vence em cerca de 1 ano: gerar outro e colar em Configurações → Atualizações e suporte.
+- **E-mail pessoal do Tulio fica só no app de celular** (decisão de 20/10): os boletos dele chegam ao PC pela aba `Boletos_Outras_Contas`. Não adicionar a mesma conta aqui.
 - Núcleo de boletos movido para o pacote compartilhado `jarvis-fenix-core` (ver [CHANGELOG](../CHANGELOG.md)).
 
 ## Ainda não feito
 
-- [ ] **Token de atualização no PC** (fine-grained, só leitura de `jarvis-fenix-desktop`) em Configurações → Atualizações e suporte. Sem ele, o PC não baixa as próximas versões sozinho.
-- [ ] Conectar o e-mail pessoal do Tulio (senha de app do Gmail).
+- [ ] Pagos da aba `Boletos` (nuvem) não sincronizam entre PC (lista local) e celular (Supabase `boletos_pagos`); `Boletos_Outras_Contas` e `Boletos_Manual` sincronizam pela planilha.
 - [ ] Contas de e-mail pessoais: se as mesmas contas forem ligadas aqui **e** no app de celular, as duas leituras gravam na mesma aba. A deduplicação (mesmo `id_mensagem`, mesma linha digitável ou mesmo beneficiário + vencimento + valor) evita linhas repetidas, mas o mais simples é ler cada conta em um app só.
 - [ ] Assinatura de código do instalador (aviso do SmartScreen) — decisão pendente.
 
