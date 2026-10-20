@@ -293,7 +293,7 @@ export function TelaConfiguracoes() {
 
   return (
     <div className="mx-auto flex max-w-5xl flex-col gap-5 pb-10">
-      <h2 className="text-2xl font-bold">Configurações</h2>
+      <h2 className="text-2xl">Configurações</h2>
       {erro && <Erro texto={erro} />}
       {!info.segredos.criptografiaDisponivel && (
         <Erro texto="A criptografia do sistema não está disponível neste computador. Não é possível guardar senhas com segurança." />

@@ -12,7 +12,7 @@ export function TelaProspeccao() {
     <div className="flex flex-col gap-5">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div>
-          <h2 className="text-2xl font-bold">Prospecção</h2>
+          <h2 className="text-2xl">Prospecção</h2>
           <p className="text-base text-suave">
             {rascunhos ? `${rascunhos} rascunhos esperando sua revisão no Gmail.` : 'Novos prospects chegam nos dias úteis às 8h13.'}
           </p>

@@ -10,6 +10,7 @@ import { TelaContas } from './screens/Contas'
 import { TelaEmails } from './screens/Emails'
 import { TelaHoje } from './screens/Hoje'
 import { TelaProspeccao } from './screens/Prospeccao'
+import emblema from './assets/fenix-emblema.png'
 
 const MENU: { tela: Tela; rotulo: string; icone: ReactNode }[] = [
   { tela: 'hoje', rotulo: 'Hoje', icone: <CalendarCheck className="size-6" aria-hidden /> },
@@ -23,13 +24,10 @@ const MENU: { tela: Tela; rotulo: string; icone: ReactNode }[] = [
 function Marca() {
   return (
     <div className="flex items-center gap-3 px-3 pb-6">
-      <div className="relative flex size-11 items-center justify-center rounded-xl bg-marca text-2xl font-black text-white dark:text-fundo">
-        F
-        <span className="absolute bottom-1.5 left-2.5 right-2.5 h-1 rounded bg-amber-500" />
-      </div>
+      <img src={emblema} alt="" className="h-11 w-auto" />
       <div>
-        <p className="text-lg font-extrabold leading-tight">Jarvis Fênix</p>
-        <p className="text-sm text-suave">Comercial Fênix</p>
+        <p className="font-[Oswald_Variable] text-xl font-medium leading-tight tracking-wide">Jarvis Fênix</p>
+        <p className="sobretitulo !text-[0.7rem]">Comercial Fênix</p>
       </div>
     </div>
   )
@@ -72,10 +70,10 @@ function Topo() {
   return (
     <header className="flex items-center justify-between gap-6 border-b border-borda bg-superficie px-8 py-4">
       <div>
-        <h1 className="text-2xl font-bold">
+        <p className="sobretitulo">{dataPorExtenso(new Date(agora))}</p>
+        <h1 className="text-3xl">
           {saudacao(new Date(agora))}, {nome}
         </h1>
-        <p className="text-base text-suave first-letter:uppercase">{dataPorExtenso(new Date(agora))}</p>
       </div>
       <div className="flex items-center gap-3">
         <span className="numeros text-base text-suave" aria-live="polite">

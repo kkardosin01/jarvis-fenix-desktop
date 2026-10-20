@@ -53,7 +53,7 @@ function Configurar() {
   return (
     <Painel className="mx-auto mt-10 max-w-2xl p-10 text-center">
       <Settings className="mx-auto size-14 text-marca" aria-hidden />
-      <h2 className="mt-4 text-2xl font-bold">Vamos conectar o Jarvis à planilha</h2>
+      <h2 className="mt-4 text-2xl">Vamos conectar o Jarvis à planilha</h2>
       <p className="mt-2 text-lg text-suave">
         Escolha a chave da conta de serviço do Google em Configurações. É só uma vez; depois o painel se atualiza sozinho.
       </p>

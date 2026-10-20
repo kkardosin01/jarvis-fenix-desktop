@@ -119,7 +119,7 @@ function criarJanela(): void {
     show: false,
     title: 'Jarvis Fênix',
     icon: recurso('icon.png'),
-    backgroundColor: nativeTheme.shouldUseDarkColors ? '#0b1416' : '#f4f7f7',
+    backgroundColor: nativeTheme.shouldUseDarkColors ? '#0a0a0a' : '#f5f1e8',
     autoHideMenuBar: true,
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),

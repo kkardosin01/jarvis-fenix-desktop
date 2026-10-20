@@ -174,7 +174,7 @@ export function TelaContas() {
   return (
     <div className="flex flex-col gap-5">
       <div className="flex flex-wrap items-center justify-between gap-4">
-        <h2 className="text-2xl font-bold">Contas a pagar</h2>
+        <h2 className="text-2xl">Contas a pagar</h2>
         <Botao grande variante="primario" onClick={() => setLancando(true)} icone={<Plus className="size-6" aria-hidden />}>
           Lançar boleto
         </Botao>

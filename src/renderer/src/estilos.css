@@ -1,45 +1,46 @@
 @import 'tailwindcss';
 
+/* Identidade do site da Fênix: preto, carvão, dourado e creme (escuro = o do site). */
 :root {
-  --fundo: #f3f6f6;
-  --superficie: #ffffff;
-  --superficie-2: #eef3f3;
-  --borda: #d3dddd;
-  --texto: #0e1c1c;
-  --suave: #475757;
-  --marca: #0f5c56;
-  --marca-forte: #0b4a45;
-  --marca-suave: #e1efed;
-  --perigo: #b42318;
-  --perigo-suave: #fde7e4;
-  --alerta: #92400e;
-  --alerta-suave: #fef0c7;
-  --ok: #166534;
-  --ok-suave: #dcfce7;
-  --info-suave: #e0ecff;
-  --info: #1d4ed8;
+  --fundo: #f5f1e8;
+  --superficie: #fffdf8;
+  --superficie-2: #ece6d8;
+  --borda: #dcd2bd;
+  --texto: #141414;
+  --suave: #555049;
+  --marca: #7a5a22;
+  --marca-forte: #5e4519;
+  --marca-suave: #f1e6cf;
+  --perigo: #a3271b;
+  --perigo-suave: #f9e3df;
+  --alerta: #8f4a00;
+  --alerta-suave: #fbe8d2;
+  --ok: #1f6b3a;
+  --ok-suave: #e1f1e5;
+  --info-suave: #e3eaf6;
+  --info: #24497f;
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --fundo: #0a1315;
-    --superficie: #111d20;
-    --superficie-2: #172629;
-    --borda: #26393d;
-    --texto: #e9f1f1;
-    --suave: #a3b6b6;
-    --marca: #45b8aa;
-    --marca-forte: #6fd0c4;
-    --marca-suave: #123331;
-    --perigo: #ff8a80;
-    --perigo-suave: #3b1714;
-    --alerta: #fcd34d;
-    --alerta-suave: #3a2b0c;
-    --ok: #86efac;
-    --ok-suave: #10301d;
-    --info-suave: #142542;
-    --info: #93c5fd;
+    --fundo: #0a0a0a;
+    --superficie: #141414;
+    --superficie-2: #1c1c1c;
+    --borda: #2a2620;
+    --texto: #f5f1e8;
+    --suave: #a3a3a3;
+    --marca: #cda35c;
+    --marca-forte: #e8cf9b;
+    --marca-suave: #262013;
+    --perigo: #f08a7a;
+    --perigo-suave: #34160f;
+    --alerta: #f2a65a;
+    --alerta-suave: #33220f;
+    --ok: #7fd49a;
+    --ok-suave: #12291a;
+    --info-suave: #16202e;
+    --info: #9cc3f5;
     color-scheme: dark;
   }
 }
@@ -62,7 +63,8 @@
   --color-ok-suave: var(--ok-suave);
   --color-info: var(--info);
   --color-info-suave: var(--info-suave);
-  --font-sans: 'Segoe UI Variable Text', 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --font-sans: 'Manrope Variable', 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Oswald Variable', 'Arial Narrow', sans-serif;
 }
 
 /* Tamanho da fonte escolhido em Configurações (tudo em rem acompanha) */
@@ -83,6 +85,22 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Oswald Variable', 'Arial Narrow', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.sobretitulo {
+  font-family: 'Oswald Variable', 'Arial Narrow', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.85rem;
+  color: var(--marca);
 }
 
 .numeros {

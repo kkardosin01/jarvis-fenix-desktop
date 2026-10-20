@@ -133,7 +133,7 @@ test('tema escuro legível', async () => {
   await janela.getByRole('button', { name: 'Hoje', exact: true }).click()
   await janela.emulateMedia({ colorScheme: 'dark' })
   const fundo = await janela.evaluate(() => getComputedStyle(document.body).backgroundColor)
-  expect(fundo).toBe('rgb(10, 19, 21)')
+  expect(fundo).toBe('rgb(10, 10, 10)')
   await janela.waitForTimeout(400)
   await janela.screenshot({ path: 'test-results/hoje-escuro.png' })
   await janela.emulateMedia({ colorScheme: 'light' })

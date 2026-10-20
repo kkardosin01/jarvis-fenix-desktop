@@ -1,5 +1,11 @@
 # Histórico
 
+## 20/10/2026 · identidade visual do site (ainda sem instalador novo)
+
+- Ícones do programa, do instalador e da bandeja com a fênix dourada do site (`assets/fenix-emblema.png`, `npm run icon`).
+- Cores do site (preto/carvão/dourado no escuro, creme/dourado no claro), títulos em Oswald e texto em Manrope (fontes embutidas, funcionam sem internet). A fênix substitui o "F" no menu.
+- Teste de ponta a ponta atualizado para o novo fundo escuro.
+
 ## 0.1.0 — 19/10/2026 · primeira versão
 
 **App**

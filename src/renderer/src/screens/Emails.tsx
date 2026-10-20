@@ -29,7 +29,7 @@ export function TelaEmails() {
   return (
     <div className="flex flex-col gap-5">
       <div className="flex flex-wrap items-center justify-between gap-4">
-        <h2 className="text-2xl font-bold">E-mails importantes</h2>
+        <h2 className="text-2xl">E-mails importantes</h2>
         <Botao grande variante="primario" onClick={() => void window.jarvis.abrirExterno(GMAIL_EMPRESA)} icone={<ExternalLink className="size-5" aria-hidden />}>
           Abrir Gmail da empresa
         </Botao>

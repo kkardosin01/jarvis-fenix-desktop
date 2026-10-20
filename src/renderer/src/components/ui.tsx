@@ -52,7 +52,7 @@ export function Painel({ titulo, acao, children, className }: { titulo?: ReactNo
     <section className={cx('flex min-h-0 flex-col rounded-2xl border border-borda bg-superficie', className)}>
       {titulo && (
         <header className="flex items-center justify-between gap-3 border-b border-borda px-5 py-3.5">
-          <h2 className="text-lg font-bold">{titulo}</h2>
+          <h2 className="text-lg">{titulo}</h2>
           {acao}
         </header>
       )}
@@ -132,7 +132,7 @@ export function Modal({ titulo, aoFechar, children, largura = 'max-w-2xl' }: { t
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/45 p-6" role="dialog" aria-modal aria-label={titulo}>
       <div className={cx('flex max-h-[92vh] w-full flex-col rounded-2xl border border-borda bg-superficie shadow-2xl', largura)}>
         <header className="flex items-center justify-between border-b border-borda px-6 py-4">
-          <h2 className="text-xl font-bold">{titulo}</h2>
+          <h2 className="text-xl">{titulo}</h2>
           <Botao variante="fantasma" onClick={aoFechar} aria-label="Fechar" icone={<X className="size-6" aria-hidden />} />
         </header>
         <div className="overflow-y-auto px-6 py-5">{children}</div>

@@ -3,7 +3,7 @@
 ## Feito
 
 - Código completo, com testes, typecheck, lint e build passando (os testes do núcleo agora rodam no `jarvis-fenix-core`).
-- Instalador `Jarvis-Fenix-Setup-0.1.0.exe` gerado **localmente** (`release/0.1.0/`, fora do Git). Ele foi gerado **antes** da troca para o `jarvis-fenix-core`; gere de novo antes de instalar.
+- Instalador `Jarvis-Fenix-Setup-0.1.0.exe` gerado **localmente** (`release/0.1.0/`, fora do Git). Ele foi gerado **antes** da troca para o `jarvis-fenix-core` e da nova identidade visual (20/10); gere de novo antes de instalar.
 - Núcleo de boletos movido para o pacote compartilhado `jarvis-fenix-core` (ver [CHANGELOG](../CHANGELOG.md)).
 
 ## Ainda não feito

@@ -10,7 +10,7 @@ export function TelaClientes() {
   const contatos = painel.dados?.contatos ?? []
   return (
     <div className="flex flex-col gap-5">
-      <h2 className="text-2xl font-bold">Clientes para ligar</h2>
+      <h2 className="text-2xl">Clientes para ligar</h2>
       {painel.erro && !painel.dados && <Erro texto={painel.erro} aoTentar={() => void atualizar()} />}
       <Painel>
         {contatos.length === 0 ? (
