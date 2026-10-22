@@ -1,5 +1,10 @@
 # Histórico
 
+## 0.1.1 — 22/10/2026 · teste da atualização automática
+
+- Versão de teste para confirmar que o PC da empresa baixa e instala atualizações sozinho pelo GitHub Releases (token de leitura em Configurações). Nenhuma mudança de funcionamento.
+- Inclui a identidade visual de 20/10, que já estava no instalador 0.1.0 publicado.
+
 ## 20/10/2026 · identidade visual do site (ainda sem instalador novo)
 
 - Ícones do programa, do instalador e da bandeja com a fênix dourada do site (`assets/fenix-emblema.png`, `npm run icon`).

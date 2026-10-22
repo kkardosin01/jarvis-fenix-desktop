@@ -1,7 +1,7 @@
 {
   "name": "jarvis-fenix-desktop",
   "productName": "Jarvis Fênix",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Central de comando da Comercial Fênix SC Ltda",
   "author": "Comercial Fênix SC Ltda",
   "private": true,
